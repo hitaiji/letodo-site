@@ -48,6 +48,7 @@ a {
   min-height: 100vh;
 }
 
+.legal-header,
 .hero,
 .section {
   position: relative;
@@ -63,6 +64,10 @@ a {
 .hero--compact {
   min-height: auto;
   padding-bottom: 24px;
+}
+
+.legal-header {
+  padding: 24px 0 28px;
 }
 
 .hero__glow {
@@ -228,20 +233,30 @@ h1 {
   margin-top: 72px;
 }
 
+.legal-frame,
 .legal-hero,
 .site-footer {
   position: relative;
   z-index: 1;
 }
 
+.legal-frame {
+  padding: 24px 32px 36px;
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0.82), rgba(255, 247, 237, 0.66));
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 36px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
 .legal-hero {
   max-width: 760px;
-  padding-top: 84px;
+  padding: 72px 0 8px;
 }
 
 .legal-hero h1 {
   max-width: none;
-  font-size: clamp(3rem, 8vw, 5rem);
+  font-size: clamp(2.8rem, 7vw, 4.8rem);
 }
 
 .legal-meta {
@@ -353,7 +368,7 @@ h1 {
 .legal-main {
   width: min(calc(100% - 32px), 920px);
   margin: 0 auto;
-  padding: 8px 0 72px;
+  padding: 0 0 72px;
 }
 
 .legal-card {
@@ -368,8 +383,9 @@ h1 {
 
 .legal-card h2 {
   margin-bottom: 16px;
-  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
   letter-spacing: -0.04em;
+  line-height: 1.2;
 }
 
 .legal-card p {
@@ -387,6 +403,10 @@ h1 {
   padding-left: 1.2rem;
   color: var(--muted);
   line-height: 1.9;
+}
+
+.legal-list li + li {
+  margin-top: 8px;
 }
 
 .site-footer {
@@ -425,8 +445,12 @@ h1 {
     padding-top: 72px;
   }
 
+  .legal-frame {
+    padding: 24px 26px 32px;
+  }
+
   .legal-hero {
-    padding-top: 64px;
+    padding-top: 56px;
   }
 
   h1 {
@@ -436,6 +460,7 @@ h1 {
 
 @media (max-width: 720px) {
   .hero,
+  .legal-header,
   .section,
   .legal-main,
   .site-footer {
@@ -456,12 +481,21 @@ h1 {
     padding-bottom: 48px;
   }
 
+  .legal-header {
+    padding-bottom: 20px;
+  }
+
   .hero__content {
     padding-top: 56px;
   }
 
+  .legal-frame {
+    padding: 18px 18px 24px;
+    border-radius: 24px;
+  }
+
   .legal-hero {
-    padding-top: 48px;
+    padding-top: 40px;
   }
 
   h1 {
