@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Letodo | 目標を、今日やるTodoに落とし込む</title>
+    <meta
+      name="description"
+      content="Letodo は、人生や仕事の目標を日々のTodoに落とし込み、Today画面で実行までつなげる Todo SaaS です。"
+    />
+    <meta property="og:title" content="Letodo" />
+    <meta
+      property="og:description"
+      content="目標を、今日やるTodoに落とし込み、達成まで支援する。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero__glow hero__glow--left"></div>
+        <div class="hero__glow hero__glow--right"></div>
+        <nav class="nav">
+          <a class="nav__brand" href="#top">Letodo</a>
+          <div class="nav__links">
+            <a href="#problem">課題</a>
+            <a href="#value">価値</a>
+            <a href="#status">開発状況</a>
+          </div>
+        </nav>
+
+        <div class="hero__content" id="top">
+          <p class="eyebrow">TODAY-FIRST TODO PLATFORM</p>
+          <h1>目標を、今日やるTodoに落とし込む。</h1>
+          <p class="hero__lead">
+            Letodo は、人生や仕事の目標を日々のTodoに変換し、
+            Today画面で迷わず実行できる状態までつなげる Todo SaaS です。
+          </p>
+          <div class="hero__actions">
+            <a
+              class="button button--primary"
+              href="https://github.com/hitaiji/letodo-site"
+            >
+              GitHub を見る
+            </a>
+            <a class="button button--ghost" href="#status">開発状況を見る</a>
+          </div>
+
+          <div class="hero__highlights" aria-label="Letodo の特徴">
+            <article class="highlight-card">
+              <span class="highlight-card__label">Today First</span>
+              <p>その日にやるべきことを、1画面で明確にする。</p>
+            </article>
+            <article class="highlight-card">
+              <span class="highlight-card__label">Goal to Action</span>
+              <p>抽象的な目標を、実行できる粒度のTodoまで分解する。</p>
+            </article>
+            <article class="highlight-card">
+              <span class="highlight-card__label">Reflection Loop</span>
+              <p>完了だけでなく、未完了の整理と振り返りまで扱う。</p>
+            </article>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section section--split" id="problem">
+          <div>
+            <p class="section__kicker">Problem</p>
+            <h2>目標はあるのに、今日やることに落ちない。</h2>
+          </div>
+          <div class="problem-list">
+            <article class="problem-item">
+              <h3>目標が抽象的なまま止まる</h3>
+              <p>
+                長期の目標は立てられても、今日どの行動を選べばいいかが見えない。
+              </p>
+            </article>
+            <article class="problem-item">
+              <h3>タスクが複数ツールに散らばる</h3>
+              <p>
+                カレンダー、メモ、タスク管理ツールに情報が分散し、全体像を見失いやすい。
+              </p>
+            </article>
+            <article class="problem-item">
+              <h3>振り返りまで続かない</h3>
+              <p>
+                1日の終わりに整理する仕組みが弱く、未完了が積み上がっていく。
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="value">
+          <p class="section__kicker">Value</p>
+          <h2>Letodo が支える 3 つの流れ</h2>
+          <div class="value-grid">
+            <article class="value-card">
+              <span class="value-card__index">01</span>
+              <h3>目標を行動に変える</h3>
+              <p>
+                Mission、Goal、Todo の階層で考えを整理し、抽象的な意図を今日の実行へ変える。
+              </p>
+            </article>
+            <article class="value-card">
+              <span class="value-card__index">02</span>
+              <h3>Today で実行に集中する</h3>
+              <p>
+                予定、習慣、持ち越し、外部連携タスクを Today に集約し、その日にやることを決めやすくする。
+              </p>
+            </article>
+            <article class="value-card">
+              <span class="value-card__index">03</span>
+              <h3>振り返りまで 1 日として扱う</h3>
+              <p>
+                完了だけでなく、延期、中止、持ち越し、メモまで含めて 1 日の体験を閉じる。
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--band">
+          <div class="band-card">
+            <p class="section__kicker">Why Now</p>
+            <h2>Todo 管理ではなく、実行の文脈をつなぐ。</h2>
+            <p>
+              Letodo は「タスクを並べるだけ」の道具ではなく、目標分解、Today、
+              振り返り、外部ツールの集約を 1 つの流れで扱うことを目指しています。
+            </p>
+          </div>
+        </section>
+
+        <section class="section section--split" id="status">
+          <div>
+            <p class="section__kicker">Status</p>
+            <h2>現在はベータ版 MVP の土台づくりを進行中です。</h2>
+            <p class="section__body">
+              まずは「目標と今日の行動がつながること」と、
+              「Today で迷わず実行できること」を中心に絞って開発しています。
+            </p>
+          </div>
+          <div class="status-panel">
+            <div class="status-panel__row">
+              <span>現在の主軸</span>
+              <strong>Today 中心の実行体験</strong>
+            </div>
+            <div class="status-panel__row">
+              <span>対象ユーザー</span>
+              <strong>個人利用者と小規模チーム</strong>
+            </div>
+            <div class="status-panel__row">
+              <span>直近の注力</span>
+              <strong>Todo 集約、目標分解、振り返り導線</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--cta">
+          <div class="cta-card">
+            <p class="section__kicker">Next</p>
+            <h2>公開 repo を作ったら、そのまま GitHub Pages に載せられます。</h2>
+            <p>
+              このテンプレートを public repo にコピーし、URL や問い合わせ先だけ差し替えれば公開できます。
+            </p>
+            <div class="hero__actions">
+              <a
+                class="button button--primary"
+                href="https://github.com/hitaiji/letodo-site"
+              >
+                リポジトリ URL を差し替える
+              </a>
+              <a class="button button--ghost" href="mailto:hello@example.com">
+                連絡先を差し替える
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
